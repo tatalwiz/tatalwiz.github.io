@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bouton Rouge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f0f0f0;
+    }
+
+    #redButton {
+      width: 300px;
+      height: 300px;
+      font-size: 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    #redButton:hover {
+      background-color: darkred;
+    }
+
+    #text {
+      margin-top: 50px;
+      font-size: 22px;
+      color: #333;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="redButton">Cliquer ici pour lancer la grève générale</button>
+  <div id="text">Bravo, tu as passé la première étape, maintenant va chercher une organisation politique et va militer dedans pour permettre d'organiser cette grève générale<br>
+	Personne ne peut la décréter seul, alors va faire collectif pour faire des trucs plutôt que de rester isolé-e dans ton coin
+  </div>
+
+  <script>
+    document.getElementById("redButton").addEventListener("click", function() {
+      document.getElementById("text").style.display = "block";
+    });
+  </script>
+</body>
+</html>
